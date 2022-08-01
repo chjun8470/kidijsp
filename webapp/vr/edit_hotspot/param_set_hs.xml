@@ -1,0 +1,14 @@
+
+<krpano>
+		<!-- include in tour.xml  <include url="edit_HText.xml" />
+								  <include url="param_set_hs.xml"/>   -->
+								  
+		<include url="Install_HS.xml" />
+		
+ <action name="SettingsHS">
+ </action>
+ 
+ <data name="arhiv">
+ </data>
+ 
+</krpano>

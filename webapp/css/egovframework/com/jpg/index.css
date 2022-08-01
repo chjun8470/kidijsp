@@ -1,0 +1,118 @@
+﻿
+/*메인*/
+
+.main-container { width: 100%; height: calc(100vh); min-height:930px; max-height:1000px; background: url(/images/egovframework/com/jpg/main-back.png) no-repeat bottom; background-size:cover; position: relative; }
+.main-content { /*position: absolute; top: 55%; left:50%; transform: translate(-50%,-50%);*/ width: 100%; padding:7% 0}
+.content01 { width: 100%; }
+.content01::after { display: block; content: ""; clear: both; }
+.content02 { width: 100%; margin-top:30px }
+.content02::after { display: block; content: ""; clear: both; }
+
+.banner {width: 710px;height: 530px;border-radius: 10px;overflow: hidden;background: #fff;position: relative;float: left;
+box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);-webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);-moz-box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
+}
+.banner .banner_slide { width: 100%; height: 100%; }
+.banner div {  }
+.banner img { width:100%; height:auto; }
+.banner .slick-prev {position: absolute; top:45%; left:50%; margin-left:-45%; z-index: 1; font-size:0; border: 0;
+  width: 45px; height:86px; background: url(/images/egovframework/com/jpg/arrow02.png) no-repeat;}
+.banner .slick-next {position: absolute; top:45%; right:50%; margin-right:-45%; z-index: 1; font-size:0; border: 0;
+  width: 45px; height:86px; background: url(/images/egovframework/com/jpg/arrow01.png) no-repeat;}
+
+
+.slick-dots { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); }
+.slick-dots::after { display: block; content: ""; clear: both; }
+.slick-dots li { float: left; margin-right: 8px; }
+.slick-dots li button { width:15px; height: 15px; border-radius: 100%; background: #fff; font-size: 0; border: 0; }
+.slick-dots li.slick-active button { background: #18bdae; }
+
+.q_menu { float: right; width: 460px;}
+.q_menu ul { }
+.q_menu ul::after { display: block; content: ""; clear: both; }
+.q_menu ul li {width:48%;height: 255px;background: #fff;float: left;margin-bottom:15px;border-radius: 15px;box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);-webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);-moz-box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);}
+.q_menu ul li:nth-child(2n) { margin-left:4%; }
+.q_menu ul li a { display: block; width: 100%; height: 100%; padding: 40px 25px; }
+.q_menu ul li.menu01 { background: #fff url(/images/egovframework/com/jpg/q_menu01.png) no-repeat 20% bottom; }
+.q_menu ul li.menu01 h3 { text-align: right; font-size: 20px; font-weight: 900;}
+.q_menu ul li.menu02 { background: url(/images/egovframework/com/jpg/q_menu02-2.png) no-repeat top; text-align: center; }
+.q_menu ul li.menu02 h3 { font-size:22px; font-weight: 900; margin-top:20px; color: #fff; }
+.q_menu ul li.menu03 { background: url(/images/egovframework/com/jpg/q_menu03-2.png) no-repeat top; text-align: center; }
+.q_menu ul li.menu03 a { padding:25px 25px; }
+.q_menu ul li.menu03 h3 { font-size:22px; font-weight: 900; margin-top:20px; color: #fff; }
+.q_menu ul li.menu04 { background: url(/images/egovframework/com/jpg/q_menu04.png) no-repeat bottom; }
+
+.q_icon {  width: 710px; float: left; margin-top:30px }
+.q_icon::after { display: block; content:""; clear: both; }
+.q_icon ul {  }
+.q_icon ul::after { display: block; content:""; clear: both; }
+.q_icon ul li { float: left; width: 13.666%; margin: 0 3%; text-align: center;}
+.q_icon ul li a { display: block; color: #fff; font-size:16px; font-weight: 900;  position: relative; top: 0; transition: .2s;}
+.q_icon ul li a:hover { top:-20px; transition: .2s; }
+.q_icon ul li .icon {width:75px;height: 75px;background: #fff;border-radius: 15px;margin: 0 auto; padding:17px 0; margin-bottom: 15px;
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
+  -webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
+  -moz-box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
+}
+
+
+.latest { width: 460px; border-radius: 15px; background: #fff; float: right; padding:20px; position: relative;}
+.latest header { border-bottom: 1px solid #ddd;}
+.latest header h2 { font-size:17px; font-weight: 900; display: inline-block; position: relative;  padding-bottom:10px}
+.latest header h2::before { width:100%; background: #18bdae; height:3px; position: absolute; bottom: -2px; left:0; display: block; content: "";}
+.latest .more { width: 20px; height: 20px; background: #2447a9; color: #fff; font-weight: 900; font-size:14px; border-radius: 5px; border: 0; position: absolute; top: 15px; right: 20px;}
+.latest ul {padding-top:15px}
+.latest ul li { width: 100%; margin-bottom:5px; font-size:15px; }
+.latest ul li::after { display: block; content:""; clear: both; }
+.latest ul li .la_tit {float: left;font-weight: 600;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 65%;}
+.latest ul li .la_tit:hover { text-decoration:underline; }
+.latest ul li .la_date { float: right; color: #7f7f7f}
+
+@media screen and (max-width:1199px) {
+	.main-container { height:100%; min-height:unset; max-height:unset; padding-top:150px; padding-bottom:50px;}
+	.main-content { padding:0 20px; position:unset; transform:unset;}
+	
+	.banner {width:100%;}
+	
+	.q_menu { width:100%; margin-top:30px;}
+	.q_menu ul li:nth-child(2n) { margin-left:0 }
+	.q_menu ul li { width:23%; margin-right:2.5%; }
+	.q_menu ul li:last-child { margin-right:0 }
+	.q_icon ul li .icon { width:60px; height:60px; }
+	.q_icon ul li .icon img { width:40px }
+	.q_menu img { width:100px }
+	.q_menu ul li.menu02 { padding-top:20px }
+	
+	.q_icon { width:100%; margin-top:0}
+	
+	.latest { width:100%; margin-top:30px; }
+	
+}
+
+@media screen and (max-width:650px) {
+	.banner { height:100%; }
+	.banner .slick-prev { width:20px; background-size:contain}
+	.banner .slick-next { width:20px; background-size:contain}
+	
+	.q_menu ul li { width: 48%; margin-right:0; height:230px; }
+	.q_menu ul li:nth-child(2n) { margin-left:3% }
+	.q_menu ul li.menu03 h3 { font-size:20px }
+	.q_menu ul li.menu02 h3 { font-size:20px }
+	.q_menu ul li.menu02 { padding-top:10px; }
+	
+	.q_icon ul { text-align:center; }
+	.q_icon ul li { width:28.5%; float:unset; display:inline-block; margin-bottom:15px; margin:0 2% 15px; }
+	.q_icon ul li:hover a { top:0 }
+	.q_icon ul li a { font-size:14px }
+
+	.latest ul li { font-size:13px; }
+	
+	.footer { font-size:12px; text-align:center }
+	.footer .ft_info .ft_logo { float:unset; text-align:center; margin-bottom:20px }
+	.footer .ft_info0 { float:unset }
+
+}
+
+@media screen and (max-width:350px) {
+	.footer .ft_link ul li a { padding:0 10px } 
+
+}
